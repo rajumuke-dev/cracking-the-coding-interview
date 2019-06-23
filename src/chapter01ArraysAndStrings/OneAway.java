@@ -66,8 +66,9 @@ public class OneAway {
 	/**
 	 *  method2: Handle replace and insert in the same method;
 	 */
+	//s1.length() - s2.length() == 0 checks is not required.
 	public boolean method2(String s1, String s2) {
-		if (s1 == null || s2 == null || s1.length() - s2.length() == 0) {
+		if (s1 == null || s2 == null ) {
 			return false;
 		}
 		String str1 = s1.length() < s2.length() ? s1 : s2;
